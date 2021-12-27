@@ -1,0 +1,354 @@
+/*Veliki ekran do 1200px*/
+@media only screen and (max-width: 1200px) {
+    .naslovni-tekst {
+        width: 100%;
+        padding: 0 2%;
+        transition: 0.9s;
+    }
+
+    .main-nav li {
+        transition: 0.3s;
+    }
+
+    .row {
+        padding: 0 2%;
+        transition: 0.5s;
+    }
+
+    .col {
+        display: block;
+        float: left;
+        margin: 2% 0% 2% 0%;
+    }
+
+    .media .span-1-of-4 {
+        transition: 0.3s;
+        width: 33.33%;
+    }
+
+    .korpa-mali-ekran {
+        display: none;
+    }
+
+
+}
+
+
+
+/*Mali tableti do velikih tableta 768px do 1023px*/
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+    
+
+    .main-nav li {
+        font-size: 85%;
+        margin-left: 10px;
+        transition: 0.3s;
+    }
+
+    .main-nav li a:hover,
+    .main-nav li a:active {
+    border-bottom: 2px solid #05fc11b4;
+    /* background-color: #05fc1115; */
+    }
+
+    .logo {
+        height: 45px;
+        transition: 0.3s;
+    }
+
+    section {padding: 60px 0;}
+
+    .col {
+        display: block;
+        float: left;
+        margin: 2% 0% 2% 0%;
+    }
+
+    .media .span-1-of-4 {
+        transition: 0.15s;
+        width: 50%;
+    }
+    
+    .korpa-mali-ekran {
+        display: none;
+    }
+
+
+}
+
+
+
+
+/*Mali ekrani dotanleta 481px do 767px*/
+@media only screen and (max-width: 767px) {
+
+    /*  HEADER */
+
+    
+    h1,
+    h2 {
+        font-size: 150%;
+        letter-spacing: 1px;
+    }
+    
+    h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: rgba(255, 255, 255, 0.9);
+        word-spacing: 3px;
+    }
+    
+    h2 {
+        font-size: 150%;
+        word-spacing: 2px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    /*  BUTTONS  */
+
+    .btn:link,
+    .btn:visited {
+        display: inline-block;
+        font-size: medium;
+        padding: 10px 30px;
+        font-weight: 300;
+        text-decoration: none;
+        border-radius: 200px;
+        color: rgb(255, 255, 255);
+        transition: background-color 0.3s;
+    }
+
+    .btn-full:link,
+    .btn-full:visited {
+        background-color: #05fc1157;
+        border: 1px solid #fff;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn-ghost:link,
+    .btn-ghost:visited {
+        border: 1px solid #fff;
+    }
+
+    .btn:hover,
+    .btn:active {
+        background-color: #05fc11b4;
+    }
+
+
+    /*  HAMBURGER MENI  */
+
+    .hamburger{
+        display: block;
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .main-nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(4, 41, 2, 0.734);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        z-index: 999;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .main-nav.active{
+        left: 0;
+    }
+
+    /* .sticky>.main-nav.active {
+        left: 0;
+        background-color: rgba(37, 37, 37, 0.639);
+        backdrop-filter: blur(4px);
+    } */
+
+    .main-nav>li {
+        display: block;
+        margin: 15px 0;
+        z-index: 9999;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        padding: 25px 0;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 150%;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.2s;
+    }
+
+    .main-nav>.email-korpa {
+        display: none;
+    }
+
+    .korpa-mali-ekran {
+        display: inline;
+        float: right;
+        color: #fff;
+        font-size: 90%;
+        margin-right: 20px;
+        margin-top: 8px;
+    }
+
+    nav>ul {
+        list-style: none;
+        float: right;
+    }
+
+/*  OTVORENA KORPA  */
+.catalog-page .cart-wrap.active {
+    
+    position: fixed;
+    background: rgba(44, 72, 47, 0.685);
+    backdrop-filter: blur(3px);
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 7px;
+    height: 80vh;
+    width: 50%;
+    top: 60px;
+    right: 0;
+    display: block !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 999;
+    /* overflow: scroll; */
+}
+
+    .section-ikone {
+        /* background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)), url(img/planineireka.jpg); */
+        background-color: #ecf0f1;
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
+
+/*Mali ekrani od 0 do 480px*/
+@media only screen and (max-width: 480px) {
+    
+    .hamburger{
+        display: block;
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .main-nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(4, 41, 2, 0.904);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        z-index: 9999;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .main-nav.active{
+        left: 0;
+    }
+
+    /* .sticky>.main-nav.active {
+        left: 0;
+        background-color: rgba(37, 37, 37, 0.639);
+        backdrop-filter: blur(4px);
+    } */
+
+    .main-nav>li {
+        display: block;
+        margin: 15px 0;
+        z-index: 9999;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        padding: 25px 0;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 150%;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.2s;
+    }
+
+    .main-nav>.email-korpa {
+        display: none;
+    }
+
+    nav>ul {
+        list-style: none;
+        float: right;
+    }
+
+    .media .span-1-of-4 {
+        transition: 0.15s;
+        width: 100%;
+    }
+    
+    /*  OTVORENA KORPA  */
+    .catalog-page .cart-wrap.active {
+    
+        position: fixed;
+        background: rgba(44, 72, 47, 0.685);
+        backdrop-filter: blur(3px);
+        /* border: 2px solid rgb(255, 255, 255); */
+        border-radius: 7px;
+        height: 90vh;
+        width: 60%;
+        top: 60px;
+        right: 0;
+        display: block !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 999;
+        /* overflow: scroll; */
+    }
+
+    .section-ikone {
+        /* background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)), url(img/planineireka.jpg); */
+        background-color: #ecf0f1;
+        background-size: cover;
+        background-position: center;
+    }
+}
